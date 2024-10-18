@@ -3,7 +3,7 @@ import { Loop, Stage, World, Body } from 'react-game-kit';
 const Game = () => {
   return (
     <Loop>
-        <Stage>
+        <Stage width={800} height={600}>
             <World>
                 <Body args={[0,0,75,75]} ref={ (b) => this.body = b.body }>
                     {/* Sprites will go here */}
