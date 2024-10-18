@@ -3,7 +3,16 @@ import { useState, useEffect } from 'react';
 
 const Game = () => {
     const [x, setX] = useState(0)
-    
+
+    // move a body across the screen
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setX(prevX => prevX + 5); // From the previous X position, move 5 units to the right
+        }, 100) // Move per (number supplied) seconds
+
+        return () => clearInterval(interval) // Completed
+    }, [])
+
   return (
     <Loop>
         <Stage width={800} height={600}>
