@@ -1,8 +1,9 @@
 import { Loop, Stage, World, Body } from 'react-game-kit';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const Game = () => {
     const [x, setX] = useState(0)
+    const bodyRef = useRef(null)
 
     // move a body across the screen
     useEffect(() => {
@@ -19,12 +20,11 @@ const Game = () => {
             <World>
                 <Body args={[x,100,75,75]} ref={ (b) => this.body = b.body }>
                     {/* Sprites will go here */}
-                    <div>
-                        style={{
+                    <div style={{
                             width: '75px',
                             height: '75px',
                             backgroundColor: 'blue',
-                        }}
+                        }}>
                     </div>
                 </Body>
             </World>

@@ -56,14 +56,17 @@ export default App;
 
 import LoginPage from "./views/LoginPage/LoginPage";
 import HomePage from './views/HomePage/HomePage';
+import Game from "./components/Game/Game";
 {/* import HUD from "./components/HUD/HUD"; */}
 
 const App = () => {
   return (
     <>
+      <Game />
+      { /* Components tested: 
       <LoginPage />
       <HomePage />
-      {/*<HUD /> */}
+      <HUD /> */}
     </>
   )
 }
