@@ -17,7 +17,7 @@ const Game = () => {
     <Loop>
         <Stage width={800} height={600}>
             <World>
-                <Body args={[0,0,75,75]} ref={ (b) => this.body = b.body }>
+                <Body args={[x,100,75,75]} ref={ (b) => this.body = b.body }>
                     {/* Sprites will go here */}
                     <div>
                         style={{
