@@ -6,7 +6,14 @@ const Game = () => {
         <Stage>
             <World>
                 <Body args={[0,0,75,75]} ref={ (b) => this.body = b.body }>
-
+                    {/* Sprites will go here */}
+                    <div>
+                        style={{
+                            width: '75px',
+                            height: '75px',
+                            backgroundColor: 'blue',
+                        }}
+                    </div>
                 </Body>
             </World>
         </Stage>
