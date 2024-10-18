@@ -1,4 +1,5 @@
 import { Loop, Stage, World, Body } from 'react-game-kit';
+import { useState, useEffect } from 'react';
 
 const Game = () => {
   return (
